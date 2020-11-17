@@ -19,7 +19,7 @@ module.exports.getBalanceDatas = function(wallet) {
           "method": "avm.getBalance",
           "params": {
             "address": wallet,
-            "assetID": "AVAX"
+            "assetID": "2wMazz34D2W5gz68KAWkXzchRoiSvC3C25Ryyf42zzCwZizpk3"
           }
         },
         headers: headersOpt,
@@ -101,7 +101,7 @@ module.exports.getBalance = function(msg, myUser, round) {
         "method": "avm.getBalance",
         "params": {
           "address": myUser.AVAXWallets[round],
-          "assetID": "AVAX"
+          "assetID": "2wMazz34D2W5gz68KAWkXzchRoiSvC3C25Ryyf42zzCwZizpk3"
         },
 
         "id": 1

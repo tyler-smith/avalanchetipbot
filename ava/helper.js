@@ -56,7 +56,7 @@ module.exports.sendAvax = function(login, pwd, wallet, amount) {
           "jsonrpc": "2.0",
           "method": "avm.send",
           "params": {
-            "assetID": "AVAX",
+            "assetID": "2wMazz34D2W5gz68KAWkXzchRoiSvC3C25Ryyf42zzCwZizpk3",
             "amount": amount * 1000000000,
             "to": wallet,
             "username": login,
@@ -218,7 +218,7 @@ module.exports.checkWalletBalanceXChain = async function(wallet) {
           "method": "avm.getBalance",
           "params": {
             "address": wallet,
-            "assetID": "AVAX"
+            "assetID": "2wMazz34D2W5gz68KAWkXzchRoiSvC3C25Ryyf42zzCwZizpk3"
           }
         },
         headers: headersOpt,
@@ -246,7 +246,7 @@ module.exports.sendAVAtoXChain = async function(wallet) {
         body: {
           "username": AVA_NODE_NAME,
           "password": AVA_NODE_PWD,
-          "assetID": "AVAX",
+          "assetID": "2wMazz34D2W5gz68KAWkXzchRoiSvC3C25Ryyf42zzCwZizpk3",
           "amount": 1000,
           "to": wallet
         },

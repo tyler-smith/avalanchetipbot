@@ -398,7 +398,7 @@ bot.on("callback_query", function(callbackQuery) {
           menu.getMoreTasks(msg, myUser)
           break;
         case "SET AVAX WALLET":
-          _db.set('users_participating_1', msg.chat.id, "AVAX", myUser.AVAXTMP, false)
+          _db.set('users_participating_1', msg.chat.id, "Wonton", myUser.AVAXTMP, false)
           bot.sendMessage(msg.chat.id, "✅ Your Avalanche X-Chain wallet is linked!").then(() => {
             setTimeout(() => {
               menu.setAdInfo(msg, null, myUser)
@@ -563,7 +563,7 @@ bot.on('text', function(msg, match) {
         menu.setInfo(msg, "twitter", myUser.lang)
       } else if (msg.text.indexOf('/wallet') !== -1) {
 
-        menu.setInfo(msg, "AVAX", myUser.lang)
+        menu.setInfo(msg, "Wonton", myUser.lang)
 
       } else if (msg.text.indexOf(_ad.btn_deposit) !== -1) {
         var _keyboard = helper_msg.getKeyboardButtons(msg, myUser.lang)

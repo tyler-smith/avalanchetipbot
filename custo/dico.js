@@ -18,9 +18,9 @@ global._LANGS = [
 ]
 global._LANG_DEFAULT = "EN"
 global._CRYPTO_NAME = "Avalanche"
-global._CRYPTO_TICKER = "AVAX"
-global._CRYPTO_CURRENCY = "AVAX"
-global._CRYPTO_WALLET_TYPE = "AVAX"
+global._CRYPTO_TICKER = "WNTN"
+global._CRYPTO_CURRENCY = "Wonton"
+global._CRYPTO_WALLET_TYPE = "Wonton"
 global._AD_BOT_USERNAME = "AvalancheTipBot"
 global._AD_BOT_DIR = ""
 

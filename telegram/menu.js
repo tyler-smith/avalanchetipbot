@@ -315,7 +315,7 @@ module.exports.getWithdrawMenu = function(msg, other, myUser) {
 
     };
     bot.sendMessage(msg.chat.id, 'To withdraw your AvalancheTipBot balance, link your AVAX wallet first!', options).then(() => {
-      menu.setInfo(msg, "AVAX", myUser.lang)
+      menu.setInfo(msg, "Wonton", myUser.lang)
     })
   } else {
     _db.set('users_participating_' + _AD_ROUND, msg.chat.id, null, {
